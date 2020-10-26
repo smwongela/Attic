@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "624992357961",
+    "firebase_url": "https://the-attic-69d65.firebaseio.com",
+    "project_id": "the-attic-69d65",
+    "storage_bucket": "the-attic-69d65.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624992357961:android:9e8967129ea42f98c5f998",
+        "android_client_info": {
+          "package_name": "com.mwongela.theattic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "624992357961-runp74sbqoik7qglbdl58j56q04s5psu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7MrGq-ZocoRH6hh_oWRqCD81cItSVtTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "624992357961-runp74sbqoik7qglbdl58j56q04s5psu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

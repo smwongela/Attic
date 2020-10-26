@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:background="#000000"
+
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:logo="@mipmap/app_logo"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:padding="10dp"
+        app:titleTextAppearance="@style/app_title" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_below="@id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#000000"
+            tools:context=".PostActivity">
+
+            <ImageButton
+                android:id="@+id/imgBtn"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/add_photo"
+                />
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:id="@+id/textTitle"
+                android:background="@drawable/edit_text_styles"
+                android:padding="10dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:hint="Post Title"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:background="@drawable/edit_text_styles"
+                android:padding="15dp"
+                android:layout_marginTop="20dp"
+                android:hint="Post Description"
+                android:textColor="#ffffff"
+                android:id="@+id/textDesc"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kajiado"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                />
+
+            <Button
+                android:layout_marginTop="30dp"
+                android:id="@+id/postBtn"
+                android:textColor="@color/gold"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+
+                android:background="@drawable/action_button_style"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Post"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

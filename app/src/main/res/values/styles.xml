@@ -1,0 +1,19 @@
+<resources>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="app_title">
+        <item name="android:fontFamily">@font/amsterdam</item>
+        <item name="android:textColor">@color/gold</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+</resources>

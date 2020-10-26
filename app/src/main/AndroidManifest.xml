@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mwongela.theattic">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:name=".FirebaseHandler"
+        android:hardwareAccelerated="false"
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ProfileActivity"
+            android:label="Set Profile"
+            >
+
+        </activity>
+        <activity android:name=".SinglePostActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity"
+            >
+        </activity>
+        <activity android:name=".LoginActivity"
+            android:label="@string/app_name"/>
+        <activity android:name=".RegisterActivity"
+            android:label="@string/app_name"/>
+
+        <activity android:name=".PostActivity"
+            android:label="Add post"/>
+
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>
